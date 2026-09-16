@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fil">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isang Munting Regalo Para Sa'yo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="gift-style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="sparkles" aria-hidden="true">✦ · ˚ ✧ · ˚ ✦</div>
+      <section class="hero">
+        <p class="eyebrow">A little surprise for you</p>
+        <h1>I made it for you <span>🎀</span></h1>
+      </section>
+
+      <section class="gifts" aria-label="Buksan ang apology letter">
+        <button class="apology-letter" data-gift="0" type="button" aria-label="Open my letter">
+          <span class="orbit orbit-one">✦</span>
+          <span class="orbit orbit-two">♡</span>
+          <span class="letter-back"></span>
+          <span class="letter-paper">
+            <span class="tiny-heart">♥</span>
+            <span class="letter-title">Open it hihi</span>
+            <span class="seal">sorry!</span>
+          </span>
+          <span class="letter-hint">tap to open</span>
+        </button>
+      </section>
+
+    </main>
+
+    <dialog class="surprise-modal" id="surpriseModal">
+      <button class="close-button" id="closeButton" aria-label="Isara ang mensahe">×</button>
+      <img id="surpriseImage" src="" alt="Memory photo" />
+      <div class="message-content">
+        <div class="modal-stickers" aria-hidden="true"><span>🌷</span><span>♡</span><span>✨</span></div>
+        <p class="mini-title">For you, my Jah Jah</p>
+        <h2 id="surpriseTitle"></h2>
+        <p id="surpriseMessage"></p>
+        <p class="tiny-note">a little letter from my heart 🥺♡</p>
+        <div class="sorry-loop" aria-label="Maraming mensahe ng sorry">
+          <div class="sorry-track" id="sorryTrack"></div>
+        </div>
+        <div class="music-player">
+          <p>🎵 A Thousand Years — Christina Perri</p>
+          <!-- Ilagay ang legal na MP3 copy ng kanta sa parehong folder at pangalanan itong a-thousand-years.mp3. -->
+          <audio id="backgroundMusic" preload="auto">
+            <source src="a-thousand-years.mp3" type="audio/mpeg" />
+          </audio>
+          <p class="music-status" id="musicStatus">Naghahanda ang music…</p>
+        </div>
+      </div>
+    </dialog>
+
+    <footer>Made with lots of love ♡</footer>
+    <script src="gift-script.js"></script>
+  </body>
+</html>
